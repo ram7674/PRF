@@ -1,4 +1,11 @@
 /********** Template CSS **********/
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
 :root {
     --primary: #1e5f9e;
     --light: #EFF5FF;
@@ -381,7 +388,7 @@
 }
 
 .objectives-list i {
-    color: #007bff;
+    color: #1e5f9e;
     font-size: 1.2rem;
     margin-right: 10px;
 }
