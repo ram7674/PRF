@@ -162,6 +162,78 @@
     height: 100%;
 }
 
+
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu-items {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    padding: 10px 0px;
+    border-radius: 6px;
+}
+
+.dropdown-submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-toggle {
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+
+/* Right arrow symbol using CSS */
+.submenu-toggle::after {
+    content: "\f107"; /* Unicode for Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.submenu-items a {
+    display: block;
+    padding: 5px 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu-items a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .dropdown-submenu {
+        position: static;
+    }
+    .submenu-items {
+        position: static;
+        display: block;
+        padding-left: 15px;
+        box-shadow: none;
+    }
+}
+
+
+
+
+
 /*** Header ***/
 .header-carousel .owl-carousel-text {
     position: absolute;
